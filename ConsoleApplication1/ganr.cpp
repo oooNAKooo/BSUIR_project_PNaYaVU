@@ -36,11 +36,11 @@ ostream& operator<< (ostream& os, ganr& ss)
 
 istream& operator>>(istream& in, ganr& obj2)
 {
-	cout << "Çàïîëíèòå äàííûå î ôèëüìå:" << endl;
-	cout << endl << "[1] Íàçâàíèå ôèëüìà: ";
+	cout << "Ð—Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¾ Ñ„Ð¸Ð»ÑŒÐ¼Ðµ:" << endl;
+	cout << endl << "[1] ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ„Ð¸Ð»ÑŒÐ¼Ð°: ";
 	rewind(stdin);
 	in.getline(obj2.nazvanie, 80);
-	cout << endl << "[2] Ïðîäîëæèòåëüíîñòü ôèëüìà:(ìèí) ";
+	cout << endl << "[2] ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚ÑŒ Ñ„Ð¸Ð»ÑŒÐ¼Ð°:(Ð¼Ð¸Ð½) ";
 	in >> obj2.pr;
 
 	return in;
