@@ -79,7 +79,7 @@ void glav()
 					{
 						fl_txt.Write_Text(s1);
 					}
-					cout << "Çàïèñü ïðîèçâåäåíà!" << endl;
+					cout << "Ð—Ð°Ð¿Ð¸ÑÑŒ Ð¿Ñ€Ð¾Ð¸Ð·Ð²ÐµÐ´ÐµÐ½Ð°!" << endl;
 					system("pause");
 				}break;
 				case 4:
@@ -107,14 +107,14 @@ void glav()
 				{
 					system("cls");
 					data1->del();
-					cout << "Ñòåê î÷èùåí!" << endl;
+					cout << "Ð¡Ñ‚ÐµÐº Ð¾Ñ‡Ð¸Ñ‰ÐµÐ½!" << endl;
 					system("pause");
 				}break;
 				case 7:
 				{
 					system("cls");
 					int razm = data1->show_razm();
-					cout << "Êîëè÷åñòâî ýëåìåíòîâ â îáúåêòå còåêà: " 
+					cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð² Ð¾Ð±ÑŠÐµÐºÑ‚Ðµ cÑ‚ÐµÐºÐ°: " 
 						 << razm << endl;
 					system("pause");
 				}break;
@@ -212,14 +212,14 @@ void glav()
 				{
 					system("cls");
 					data2->del();
-					cout << "Ñòåê î÷èùåí!" << endl;
+					cout << "Ð¡Ñ‚ÐµÐº Ð¾Ñ‡Ð¸Ñ‰ÐµÐ½!" << endl;
 					system("pause");
 				}break;
 				case 7:
 				{
 					system("cls");
 					int razm = data2->show_razm();
-					cout << "Êîëè÷åñòâî ýëåìåíòîâ â îáúåêòå còåêà: " << razm << endl;
+					cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð² Ð¾Ð±ÑŠÐµÐºÑ‚Ðµ cÑ‚ÐµÐºÐ°: " << razm << endl;
 					system("pause");
 				}break;
 				case 8:
@@ -316,14 +316,14 @@ void glav()
 				{
 					system("cls");
 					data3->del();
-					cout << "Ñòåê î÷èùåí!" << endl;
+					cout << "Ð¡Ñ‚ÐµÐº Ð¾Ñ‡Ð¸Ñ‰ÐµÐ½!" << endl;
 					system("pause");
 				}break;
 				case 7:
 				{
 					system("cls");
 					int razm = data3->show_razm();
-					cout << "Êîëè÷åñòâî ýëåìåíòîâ â îáúåêòå còåêà: " << razm << endl;
+					cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð² Ð¾Ð±ÑŠÐµÐºÑ‚Ðµ cÑ‚ÐµÐºÐ°: " << razm << endl;
 					system("pause");
 				}break;
 				case 8:
@@ -421,14 +421,14 @@ void glav()
 				{
 					system("cls");
 					data4->del();
-					cout << "Ñòåê î÷èùåí!" << endl;
+					cout << "Ð¡Ñ‚ÐµÐº Ð¾Ñ‡Ð¸Ñ‰ÐµÐ½!" << endl;
 					system("pause");
 				}break;
 				case 7:
 				{
 					system("cls");
 					int razm = data4->show_razm();
-					cout << "Êîëè÷åñòâî ýëåìåíòîâ â îáúåêòå còåêà: " << razm << endl;
+					cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð² Ð¾Ð±ÑŠÐµÐºÑ‚Ðµ cÑ‚ÐµÐºÐ°: " << razm << endl;
 					system("pause");
 				}break;
 				case 8:
@@ -470,7 +470,7 @@ void glav()
 		case 0:
 		{
 			system("cls");
-			cout << "Äî ñêîðîé âñòðå÷è!" << endl;
+			cout << "Ð”Ð¾ ÑÐºÐ¾Ñ€Ð¾Ð¹ Ð²ÑÑ‚Ñ€ÐµÑ‡Ð¸!" << endl;
 			system("pause");
 		}return;
 		}
