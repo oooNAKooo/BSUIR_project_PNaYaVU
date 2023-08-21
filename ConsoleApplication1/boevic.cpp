@@ -36,11 +36,11 @@ istream& operator>>(istream& in, boevic& obj2)
 {
 	in >> dynamic_cast<ganr&>(obj2);
 	cout << endl
-		<< "[3] Âèä ñïåöıôôåêòîâ: ";
+		<< "[3] Ğ’Ğ¸Ğ´ ÑĞ¿ĞµÑ†ÑÑ„Ñ„ĞµĞºÑ‚Ğ¾Ğ²: ";
 	in.ignore(); 
 	in.getline(obj2.spec, 80);
 	cout << endl
-		<< "[4] Êîëè÷åñòâî ñåğèé: ";
+		<< "[4] ĞšĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ ÑĞµÑ€Ğ¸Ğ¹: ";
 	in >> obj2.ser;
 
 	return in;
