@@ -36,10 +36,10 @@ ostream& operator<< (ostream& on, melodrama& obj2)
 istream& operator>>(istream& in, melodrama& obj1)
 {
 	in >> dynamic_cast<ganr&>(obj1);
-	cout << endl << "[3] Страна производитель: ";
-	in.ignore(); //игнорирование символов потока
+	cout << endl << "[3] РЎС‚СЂР°РЅР° РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ: ";
+	in.ignore(); //РёРіРЅРѕСЂРёСЂРѕРІР°РЅРёРµ СЃРёРјРІРѕР»РѕРІ РїРѕС‚РѕРєР°
 	in.getline(obj1.strana, 80);
-	cout << endl << "[4] Год выпуска: ";
+	cout << endl << "[4] Р“РѕРґ РІС‹РїСѓСЃРєР°: ";
 	in >> obj1.godik;
 	return in;
 }
