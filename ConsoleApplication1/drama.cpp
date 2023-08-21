@@ -31,10 +31,10 @@ ostream& operator<< (ostream& avt, drama& obj2)
 istream& operator>>(istream& in, drama& obj2)
 {
 	in >> dynamic_cast<melodrama&>(obj2);
-	cout << endl << "[5] Ïðîäþññåð: ";
+	cout << endl << "[5] ÐŸÑ€Ð¾Ð´ÑŽÑÑÐµÑ€: ";
 	in.ignore();
 	in.getline(obj2.prod, 80);
-	cout << endl << "[6] Îöåíêà: ";
+	cout << endl << "[6] ÐžÑ†ÐµÐ½ÐºÐ°: ";
 	in >> obj2.ocen;
 
 	return in;
@@ -66,35 +66,35 @@ void drama::change()
 	{
 	case '1':
 		system("CLS");
-		cout << "Íàçâàíèå ñåé÷àñ: " << nazvanie << endl;
-		cout << "Ââåäèòå íîâîå èìÿ: ";
+		cout << "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑÐµÐ¹Ñ‡Ð°Ñ: " << nazvanie << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²Ð¾Ðµ Ð¸Ð¼Ñ: ";
 		cin >> nazvanie; break;
 	case '2':
 		system("CLS");
-		cout << "Ïðîäîëæèòåëüíîñòü ñåé÷àñ:" << pr << endl;
-		cout << "Ââåäèòå íîâóþ ïðîäîëæèòåëüíîñòü: ";
+		cout << "ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚ÑŒ ÑÐµÐ¹Ñ‡Ð°Ñ:" << pr << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²ÑƒÑŽ Ð¿Ñ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚ÑŒ: ";
 		cin >> pr; break;
 	case '3':
 		system("CLS");
-		cout << "Ïðîèçâîäèòåëü ñåé÷àñ: " << strana << endl;
-		cout << "Ââåäèòå íîâîãî ïðîèçâîäèòåëÿ: ";
+		cout << "ÐŸÑ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒ ÑÐµÐ¹Ñ‡Ð°Ñ: " << strana << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²Ð¾Ð³Ð¾ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»Ñ: ";
 		cin >> strana; break;
 	case '4':
 		system("CLS");
-		cout << "Ãîä âûïóñêà ñåé÷àñ: " << godik << endl;
-		cout << "Ââåäèòå íîâûé ãîä: ";
+		cout << "Ð“Ð¾Ð´ Ð²Ñ‹Ð¿ÑƒÑÐºÐ° ÑÐµÐ¹Ñ‡Ð°Ñ: " << godik << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²Ñ‹Ð¹ Ð³Ð¾Ð´: ";
 		cin >> godik; break;
 	case '5':
 		system("CLS");
-		cout << "Ïðîäþñåð ñåé÷àñ: " << prod << endl;
-		cout << "Ââåäèòå íîâîãî ïðîäþññåðà: ";
+		cout << "ÐŸÑ€Ð¾Ð´ÑŽÑÐµÑ€ ÑÐµÐ¹Ñ‡Ð°Ñ: " << prod << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²Ð¾Ð³Ð¾ Ð¿Ñ€Ð¾Ð´ÑŽÑÑÐµÑ€Ð°: ";
 		cin >> prod; break;
 	case '6':
 		system("CLS");
-		cout << "Îöåíêà ñåé÷àñ: " << ocen << endl;
-		cout << "Ââåäèòå íîâóþ îöåíêó: ";
+		cout << "ÐžÑ†ÐµÐ½ÐºÐ° ÑÐµÐ¹Ñ‡Ð°Ñ: " << ocen << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²ÑƒÑŽ Ð¾Ñ†ÐµÐ½ÐºÑƒ: ";
 		cin >> ocen; break;
-	default: cout << endl << "Ââåäèòå îäèí èç óêàçàííûõ ïàðàìåòðîâ!"
+	default: cout << endl << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¾Ð´Ð¸Ð½ Ð¸Ð· ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ñ‹Ñ… Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð²!"
 		<< endl;
 		system("pause"); break;
 	}
