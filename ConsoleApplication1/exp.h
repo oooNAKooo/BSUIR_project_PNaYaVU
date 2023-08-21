@@ -78,7 +78,7 @@ inline char* exc(istream& obj)
 				}
 				else if (strk[i] < 'A' || strk[i]>'z')
 				{
-					throw inputexc(1, "Íåêîððåêòíûé ââîä! Äîïóñòèìû ëèøü àíãëèéñêèå ñèìâîëû!");
+					throw inputexc(1, "ÐÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹Ð¹ Ð²Ð²Ð¾Ð´! Ð”Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ñ‹ Ð»Ð¸ÑˆÑŒ Ð°Ð½Ð³Ð»Ð¸Ð¹ÑÐºÐ¸Ðµ ÑÐ¸Ð¼Ð²Ð¾Ð»Ñ‹!");
 				}
 			}
 		}
@@ -105,13 +105,13 @@ inline int test(istream& obj)
 			poka = false;
 			obj >> k;
 			if (k < 0 ||!obj.good() || obj.peek() != '\n')
-				throw overflow_error("Ââåäåí íåâåðíûé íîìåð ïóíêòà!");
+				throw overflow_error("Ð’Ð²ÐµÐ´ÐµÐ½ Ð½ÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹ Ð½Ð¾Ð¼ÐµÑ€ Ð¿ÑƒÐ½ÐºÑ‚Ð°!");
 		}
 		catch (overflow_error ob)
 		{
 			obj.clear();
 			rewind(stdin);
-			cout << "Èñêëþ÷åíèå: " << ob.what() << endl;
+			cout << "Ð˜ÑÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ: " << ob.what() << endl;
 			poka = true;
 		}
 	} while (poka);
@@ -130,17 +130,15 @@ inline int test()
 			poka = false;
 			cin >> k;
 			if (k < 0 || !cin.good() || cin.peek() != '\n')
-				throw overflow_error("Ââåäåí íåâåðíûé íîìåð ïóíêòà!");
+				throw overflow_error("Ð’Ð²ÐµÐ´ÐµÐ½ Ð½ÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹ Ð½Ð¾Ð¼ÐµÑ€ Ð¿ÑƒÐ½ÐºÑ‚Ð°!");
 		}
 		catch (overflow_error ob)
 		{
 			cin.clear();
 			rewind(stdin);
-			cout << "Èñêëþ÷åíèå: " << ob.what() << endl;
+			cout << "Ð˜ÑÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ: " << ob.what() << endl;
 			poka = true;
 		}
 	} while (poka);
 	return k;
 }
-
-
