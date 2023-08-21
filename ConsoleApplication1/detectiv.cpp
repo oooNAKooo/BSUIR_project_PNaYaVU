@@ -28,10 +28,10 @@ ostream& operator<< (ostream& avt, detectiv& obj2)
 istream& operator>>(istream& in, detectiv& obj2)
 {
 	in >> dynamic_cast<boevic&>(obj2);
-	cout << endl << "[5] Êíèãà: ";
-	in.ignore(); //èãíîðèðîâàíèå ñèìâîëîâ ïîòîêà
+	cout << endl << "[5] ÐšÐ½Ð¸Ð³Ð°: ";
+	in.ignore(); //Ð¸Ð³Ð½Ð¾Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð² Ð¿Ð¾Ñ‚Ð¾ÐºÐ°
 	in.getline(obj2.kng, 80);
-	cout << endl << "[6] Áþäæåò:($) ";
+	cout << endl << "[6] Ð‘ÑŽÐ´Ð¶ÐµÑ‚:($) ";
 	in >> obj2.budj;
 
 	return in;
@@ -68,38 +68,38 @@ void detectiv::change()
 		{
 		case '1': {
 			system("CLS");
-			cout << "Íàçâàíèå ñåé÷àñ: " << nazvanie << endl;
-			cout << "Ââåäèòå íîâîå íàçâàíèå: ";
+			cout << "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑÐµÐ¹Ñ‡Ð°Ñ: " << nazvanie << endl;
+			cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²Ð¾Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ: ";
 			cin >> nazvanie;
 			break;
 
 		case '2':
 			system("CLS");
-			cout << "Ïðîäîëæèòåëüíîñòü ñåé÷àñ: " << pr << endl;
-			cout << "Ââåäèòå íîâóþ ïðîäîëæèòåëüíîñòü: ";
+			cout << "ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚ÑŒ ÑÐµÐ¹Ñ‡Ð°Ñ: " << pr << endl;
+			cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²ÑƒÑŽ Ð¿Ñ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚ÑŒ: ";
 			cin >> pr; break;
 		case '3':
 			system("CLS");
-			cout << "Cïåöýôôåêòû ñåé÷àñ:" << spec << endl;
-			cout << "Ââåäèòå íîâûé âèä ñïåöýôôåêòîâ: ";
+			cout << "CÐ¿ÐµÑ†ÑÑ„Ñ„ÐµÐºÑ‚Ñ‹ ÑÐµÐ¹Ñ‡Ð°Ñ:" << spec << endl;
+			cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²Ñ‹Ð¹ Ð²Ð¸Ð´ ÑÐ¿ÐµÑ†ÑÑ„Ñ„ÐµÐºÑ‚Ð¾Ð²: ";
 			cin >> spec; break;
 		case '4':
 			system("CLS");
-			cout << "Êîëè÷åñòâî ÷àñòåé ñåé÷àñ: " << ser << endl;
-			cout << "Ââåäèòå íîâîå êîëè÷åñòâî ÷àñòåé: ";
+			cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ‡Ð°ÑÑ‚ÐµÐ¹ ÑÐµÐ¹Ñ‡Ð°Ñ: " << ser << endl;
+			cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²Ð¾Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ‡Ð°ÑÑ‚ÐµÐ¹: ";
 			cin >> ser; break;
 		case '5':
 			system("CLS");
-			cout << "Êíèãà ñåé÷àñ: " << kng << endl;
-			cout << "Ââåäèòå íîâóþ êíèãó: ";
+			cout << "ÐšÐ½Ð¸Ð³Ð° ÑÐµÐ¹Ñ‡Ð°Ñ: " << kng << endl;
+			cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²ÑƒÑŽ ÐºÐ½Ð¸Ð³Ñƒ: ";
 			cin >> kng; break;
 		case '6':
 			system("CLS");
-			cout << "Áþäæåò ñåé÷àñ: " << budj << endl;
-			cout << "Ââåäèòå íîâûé áþäæåò: ";
+			cout << "Ð‘ÑŽÐ´Ð¶ÐµÑ‚ ÑÐµÐ¹Ñ‡Ð°Ñ: " << budj << endl;
+			cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²Ñ‹Ð¹ Ð±ÑŽÐ´Ð¶ÐµÑ‚: ";
 			cin >> budj; break;
 		case '0': n = false; break;
-		default:cout << endl << "Ââåäèòå îäèí èç óêàçàííûõ ïàðàìåòðîâ!"
+		default:cout << endl << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¾Ð´Ð¸Ð½ Ð¸Ð· ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ñ‹Ñ… Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð²!"
 			<< endl;
 			system("pause");
 			break;
