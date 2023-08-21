@@ -40,7 +40,7 @@ void stack<T>::push(T znach)
 	catch (bad_alloc isk)
 	{
 		cout << endl
-			 << "Èñêëþ÷åíèå: bad_alloc!" << isk.what() 
+			 << "Ð˜ÑÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ: bad_alloc!" << isk.what() 
 			 << endl;
 		return;
 	}
@@ -57,7 +57,7 @@ void stack<T>::show(int znch)
 			throw 1;
 		if (!t)
 		{
-			cout << "Còåê ïóñò!" << endl;
+			cout << "CÑ‚ÐµÐº Ð¿ÑƒÑÑ‚!" << endl;
 			return;
 		}
 		if (znch == 0)
@@ -75,7 +75,7 @@ void stack<T>::show(int znch)
 		if (i == 1)
 		{
 			cout << endl
-				 << "Îøèáêà èíèöèàëèçàöèè!"
+				 << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¸Ð½Ð¸Ñ†Ð¸Ð°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ð¸!"
 				 << endl;
 			return;
 		}
@@ -91,7 +91,7 @@ void stack<T>::pop_last(int znch)
 			throw 1;
 		if (!h || !t)
 		{
-			cout << "Ñòåê ïóñò!" << endl;
+			cout << "Ð¡Ñ‚ÐµÐº Ð¿ÑƒÑÑ‚!" << endl;
 			return;
 		}
 		if (znch == 0)
@@ -100,7 +100,7 @@ void stack<T>::pop_last(int znch)
 			t = t->verh;
 			delete _new;
 			razm--;
-			cout << "Ýëåìåíò óäàëåí!" << endl;
+			cout << "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚ ÑƒÐ´Ð°Ð»ÐµÐ½!" << endl;
 		}
 	}
 	catch (int q)
@@ -108,7 +108,7 @@ void stack<T>::pop_last(int znch)
 		if (q == 1)
 		{
 			cout << endl
-				 << "Îøèáêà èíèöèàëèçàöèè!";
+				 << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¸Ð½Ð¸Ñ†Ð¸Ð°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ð¸!";
 			return;
 		}
 	}
