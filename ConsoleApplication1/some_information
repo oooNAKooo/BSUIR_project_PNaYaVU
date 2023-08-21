@@ -1,4 +1,54 @@
-  Теперь немного теории.
+    EN:
+
+    Now a bit of theory.
+  
+     Object-Oriented Programming (OOP) is a programming methodology based on the representation of a program as a set of interacting objects, each of which is an instance of a certain class, and the classes form an inheritance hierarchy.
+     
+     Object-oriented programming emerged as a result of the development of procedural programming ideology, where data and subroutines (procedures, functions) of their processing are not formally connected. For further development of object-oriented programming the concepts of event (so-called event-oriented programming) and component (component programming, COP) are often of great importance.
+Objects interact by means of messages. The result of further development of OOP seems to be agent-oriented programming, where agents are independent parts of code at the runtime level. The agents interact by changing the environment they are in.
+     OOP supports many useful features such as:
+
+  - encapsulation;
+  - inheritance;
+  - polymorphism of subtypes;
+  - class;
+  - data abstraction;
+  - object.
+
+     At the center of OOP is the concept of an object. An object is an entity to which messages can be sent and which can respond to them using its data. An object is an instance of a class. The object's data is hidden from the rest of the program. Encapsulation includes hiding (But it is not!).
+The presence of encapsulation is sufficient for a programming language to be object-oriented, but it does not mean that it is object-oriented - inheritance is required for that.
+But even the presence of encapsulation and inheritance does not make a programming language fully object-oriented from the point of view of OOP. The main advantages of OOP appear only when a programming language implements polymorphism of subtypes - the ability to uniformly process objects with different implementations provided there is a common interface.
+In modern object-oriented programming languages, each object is a value belonging to a particular class. A class is a composite data type declared by the programmer, which has in its composition:
+
+  - data fields;
+  - methods;
+  - object properties. 
+
+     OOP is oriented to the development of large program complexes, developed by a team of programmers (probably quite large). Designing the system as a whole, creating individual components and combining them into the final product is often performed by different people, and there is no single specialist who knows everything about the project.
+Object-oriented design focuses on describing the structure of the system being designed (prioritized over describing its behavior, unlike functional programming), that is, in fact, in answering two basic questions:
+
+  - What parts the system consists of;
+  - What is the responsibility of each of its parts.
+
+     Allocation of parts is made in such a way that each has a minimum in volume and a precisely defined set of functions (responsibilities) to be performed, and at the same time interact with other parts as little as possible.
+Many modern languages are specifically designed to facilitate object-oriented programming. However, it is possible to apply OOP techniques to a non-object-oriented language as well and vice versa, using an object-oriented language does not mean that the code automatically becomes object-oriented.
+As a rule, an object-oriented language (OOL) contains the following set of elements:
+
+  - Declaration of classes with fields (data - class members) and methods (functions - class members);
+  - Mechanism of class extension (inheritance) - generation of a new class from an existing class with automatic inclusion of all features of the ancestor class implementation into the descendant class. Most OOJs support only single inheritance;
+  - Polymorphic variables and function (method) parameters that allow assigning instances of different classes to the same variable;
+  - Polymorphic behavior of class instances through the use of virtual methods. In some PLOs, all class methods are virtual.
+     
+    Some languages add some or other additional facilities to the specified minimum set. These include:
+
+  - Constructors, destructors, finalizers;
+  - Properties (accessors);
+  - Indexers;
+  - Tools to control the visibility of class components (interfaces or access modifiers such as public, private, protected, feature, etc.).
+
+    RU:
+
+    Теперь немного теории.
   
      Объе́ктно-ориенти́рованное программи́рование (сокр. ООП) — методология программирования, основанная на представлении программы в виде совокупности взаимодействующих объектов, каждый из которых является экземпляром определённого класса, а классы образуют иерархию наследования.
      
@@ -6,32 +56,39 @@
 Взаимодействие объектов происходит посредством сообщений. Результатом дальнейшего развития ООП, по-видимому, будет агентно-ориентированое программирование, где агенты — независимые части кода на уровне выполнения. Взаимодействие агентов происходит посредством изменения среды, в которой они находятся.
      ООП поддерживает много полезных функций, такие как:
 
-  •	инкапсуляция,
-  •	наследование,
-  •	полиморфизм подтипов,
-  •	класс,
-  •	абстракция данных,
+  •	инкапсуляция;
+  •	наследование;
+  •	полиморфизм подтипов;
+  •	класс;
+  •	абстракция данных;
   •	объект.
 
      В центре ООП находится понятие объекта. Объект — это сущность, которой можно посылать сообщения и которая может на них реагировать, используя свои данные. Объект — это экземпляр класса. Данные объекта скрыты от остальной программы. Инкапсуляция включает в себя сокрытие (Но им не является!).
 Наличие инкапсуляции достаточно для объектности языка программирования, но ещё не означает его объектной ориентированности — для этого требуется наличие наследования.
 Но даже наличие инкапсуляции и наследования не делает язык программирования в полной мере объектным с точки зрения ООП. Основные преимущества ООП проявляются только в том случае, когда в языке программирования реализован полиморфизм подтипов — возможность единообразно обрабатывать объекты с различной реализацией при условии наличия общего интерфейса.
 В современных объектно-ориентированных языках программирования каждый объект является значением, относящимся к определённому классу. Класс представляет собой объявленный программистом составной тип данных, имеющий в составе:
-  •	поля данных,
-  •	методы,
-  •	свойства объекта.   
+
+  •	поля данных;
+  •	методы;
+  •	свойства объекта. 
+
      ООП ориентировано на разработку крупных программных комплексов, разрабатываемых командой программистов (возможно, достаточно большой). Проектирование системы в целом, создание отдельных компонентов и их объединение в конечный продукт при этом часто выполняется разными людьми, и нет ни одного специалиста, который знал бы о проекте всё.
 Объектно-ориентированное проектирование ориентируется на описание структуры проектируемой системы (приоритетно по отношению к описанию её поведения, в отличие от функционального программирования), то есть, фактически, в ответе на два основных вопроса:
+
   •	Из каких частей состоит система;
   •	В чём состоит ответственность каждой из её частей.
+
      Выделение частей производится таким образом, чтобы каждая имела минимальный по объёму и точно определённый набор выполняемых функций (обязанностей), и при этом взаимодействовала с другими частями как можно меньше.
 Многие современные языки специально созданы для облегчения объектно-ориентированного программирования. Однако можно применять техники ООП и для не-объектно-ориентированного языка и наоборот, применение объектно-ориентированного языка вовсе не означает, что код автоматически становится объектно-ориентированным.
 Как правило, объектно-ориентированный язык (ООЯ) содержит следующий набор элементов:
-  •	Объявление классов с полями (данными — членами класса) и методами (функциями — членами класса).
-  •	Механизм расширения класса (наследования) — порождение нового класса от существующего с автоматическим включением всех особенностей реализации класса-предка в состав класса-потомка. Большинство ООЯ поддерживают только единичное наследование.
-  •	Полиморфные переменные и параметры функций (методов), позволяющие присваивать одной и той же переменной экземпляры различных классов.
+
+  •	Объявление классов с полями (данными — членами класса) и методами (функциями — членами класса);
+  •	Механизм расширения класса (наследования) — порождение нового класса от существующего с автоматическим включением всех особенностей реализации класса-предка в состав класса-потомка. Большинство ООЯ поддерживают только единичное наследование;
+  •	Полиморфные переменные и параметры функций (методов), позволяющие присваивать одной и той же переменной экземпляры различных классов;
   •	Полиморфное поведение экземпляров классов за счёт использования виртуальных методов. В некоторых ООЯ все методы классов являются виртуальными.
-     Некоторые языки добавляют к указанному минимальному набору те или иные дополнительные средства. В их числе:
+     
+    Некоторые языки добавляют к указанному минимальному набору те или иные дополнительные средства. В их числе:
+
   •	Конструкторы, деструкторы, финализаторы;
   •	Свойства (аксессоры);
   •	Индексаторы;
